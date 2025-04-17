@@ -1,0 +1,274 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #fffdf9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ff3366;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #cc1144;
+  }
+  
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .site-logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav ul li a {
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: #ff3366;
+    transition: 0.3s;
+  }
+  
+  .main-nav ul li a:hover,
+  .main-nav ul li a.active {
+    background: #ff3366;
+    color: white;
+  }
+  
+  
+  .hero, .product-hero, .about-hero, .contact-hero, .sustainability-hero {
+    background: url('../asset/hero.png') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .hero-content h1,
+  .product-hero h1,
+  .about-hero h1,
+  .contact-hero h1,
+  .sustainability-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  
+  .btn {
+    display: inline-block;
+    background: #ff3366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #cc1144;
+  }
+  
+  
+  .features, .products, .about-content, .sustainability-content, .contact-info {
+    padding: 60px 0;
+  }
+  
+  .feature-grid, .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .feature, .product-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .feature:hover, .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature img, .product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+
+  .testimonials {
+    background: #fff2f2;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    align-self: flex-start;
+  }
+  
+  .contact-details {
+    margin-top: 40px;
+  }
+  
+  .map-placeholder iframe {
+    border-radius: 12px;
+    width: 100%;
+  }
+ 
+  .farm-to-freezer, .shark-tank, .barbie-squeezers, .our-journey, .product-preview, .home-products {
+    background-color: #fef3f7;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .farm-to-freezer h2, .shark-tank h2, .barbie-squeezers h2, .our-journey h2, .product-preview h2, .home-products h2 {
+    color: #ff3366;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .farm-to-freezer p, .shark-tank p, .barbie-squeezers p, .our-journey p, .product-preview p, .home-products p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+.women-owned {
+    background-color: #fff0f5;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 5px double #ff69b4;
+    border-bottom: 5px double #ff69b4;
+  }
+  .women-owned h2 {
+    color: #ff1493;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .women-owned p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.9;
+    font-style: italic;
+  }
+  
+  
+  
+  
+  footer {
+    background: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #ffccd5;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .main-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .main-nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .container {
+      width: 95%;
+    }
+  }
+  
